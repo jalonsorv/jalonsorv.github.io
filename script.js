@@ -1,5 +1,8 @@
 // Configura la fecha y hora de revelación
-const revealDate = new Date('2025-01-05T18:08:00');
+const revealDate = new Date('2025-01-06T00:00:00');
+
+// Mensaje secreto (puedes cambiarlo o encriptarlo)
+const secretMessage = "¡Este regalo es para: Ana García!";
 
 // Muestra la fecha de revelación en la página
 document.getElementById('reveal-time').textContent = revealDate.toLocaleString('es-ES', {
@@ -25,6 +28,9 @@ const updateTimer = () => {
     // Si se ha alcanzado la fecha, revela el mensaje
     document.getElementById('locked-message').style.display = 'none';
     document.getElementById('timer').style.display = 'none';
+
+    // Carga el mensaje dinámicamente
+    document.getElementById('name').textContent = secretMessage;
     document.getElementById('name').classList.remove('hidden');
   }
 };
