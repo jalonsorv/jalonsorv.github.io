@@ -2,7 +2,7 @@
 const revealDate = new Date('2025-01-06T00:00:00');
 
 // Mensaje secreto (puedes cambiarlo o encriptarlo)
-const secretMessage = "¡Este regalo es para: Ana García!";
+const secretMessage = "Este regalo es para: Elizabeth <br>Confiamos en que sabra a quien pedirle que instale el cuadrito en Mulan";
 
 // Muestra la fecha de revelación en la página
 document.getElementById('reveal-time').textContent = revealDate.toLocaleString('es-ES', {
