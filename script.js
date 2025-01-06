@@ -1,5 +1,5 @@
 // Configura la fecha y hora de revelación
-const revealDate = new Date('2025-01-05T18:10:00');
+const revealDate = new Date('2025-01-05T18:08:00');
 
 // Muestra la fecha de revelación en la página
 document.getElementById('reveal-time').textContent = revealDate.toLocaleString('es-ES', {
